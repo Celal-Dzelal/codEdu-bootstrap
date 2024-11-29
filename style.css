@@ -1,0 +1,93 @@
+body {
+  background-color: silver;
+}
+
+.navbarLinks {
+  background-color: #940f03;
+  color: white;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sliderImg {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.container2 {
+  background-color: #171c21;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container3 {
+  background-color: #940f03;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.teamCard {
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.teamCard:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container4 {
+  background-color: #171c21;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.cardStd {
+  width: 100%; /* Esnek genişlik */
+  max-width: 250px; /* Maksimum genişlik */
+  min-height: 100px; /* Maksimum yükseklik */
+}
+
+.cardbg {
+  background-color: #940f03;
+  cursor: pointer;
+  /* padding: 5px; */
+}
+
+.container5 {
+  background-color: #940f03;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.cardCourse {
+  cursor: pointer;
+}
+
+.cardCourse:hover {
+  opacity: 0.5;
+}
+
+.container6 {
+  background-color: #171c21;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer {
+  background-color: #940f03;
+}

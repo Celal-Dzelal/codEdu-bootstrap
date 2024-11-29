@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--! HEADER START -->
+    <nav class="navbar bg-dark navbar-dark text-light p-3">
+      <div class="container-fluid">
+        <h1>cod<span class="fw-bold text-warning">&lt;E&gt;</span>du</h1>
+        <div class="getSign">
+          <a href="#" class="pe-3 text-decoration-none text-light small"
+            >Sign In</a
+          >|<a href="#" class="ps-3 text-decoration-none text-light small"
+            >Log In</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!--! HEADER END -->
+    <!--! NAVBAR START -->
+    <nav
+      class="navbar navbar-expand-lg navbarLinks navbar-dark opacity-75 sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Main</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse display-flex justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutUs"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourTeam">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Students</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--! NAVBAR END -->
+    <!--! SLIDER START -->
+    <div class="container mt-4 mb-2 shadow-lg rounded-5 overflow-hidden">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/Slider1.jpeg"
+              class="d-block w-100 sliderImg img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-6 fw-semibold">Own Tomorrow</h5>
+              <p class="fw-bold">Coding is the Future, Join the Future!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/Slider3.jpeg"
+              class="d-block w-100 sliderImg img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-6 fw-semibold">Dream Big</h5>
+              <p class="fw-bold">Dream, Code, Achieve!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/Slider2.jpeg"
+              class="d-block w-100 sliderImg img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-6 fw-semibold">Code Passion</h5>
+              <p class="fw-bold">Every Line is a New Beginning!</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--! SLIDER END  -->
+    <!--! ABOUT START -->
+    <div class="container2 mt-4 mb-2 shadow-lg rounded-5 overflow-hidden">
+      <section id="about" class="container py-5">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-12 text-center text-light">
+            <h2 class="fw-bold pb-3 pt-4" id="aboutUs">About Us</h2>
+            <p class="lead pb-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              ab fuga neque harum esse eaque doloribus unde impedit iusto alias
+              cupiditate dolore possimus quasi magni repellendus necessitatibus
+              quidem accusamus qui. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Dignissimos laboriosam deserunt velit,
+              reprehenderit, numquam inventore, explicabo assumenda est eum
+              consequatur iure cumque eos. Ratione, illo a maiores deleniti ea
+              perferendis?
+            </p>
+            <p class="pb-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              consequuntur. Enim accusamus porro quos commodi, amet blanditiis
+              consectetur. Ipsum omnis unde laboriosam asperiores enim ex totam
+              praesentium quibusdam officiis aliquam! Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Deserunt non excepturi eos
+              suscipit odit neque ipsum, natus molestias distinctio in? Iste
+              reiciendis provident nesciunt cum saepe porro aperiam rerum
+              tempore?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              quaerat porro distinctio eveniet! Esse, in modi. Accusantium
+              veritatis laudantium, doloremque voluptatibus quo iste libero
+              fugiat itaque sit magni, inventore officia. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Possimus ipsa assumenda
+              provident, atque tempora eos dolores. Animi sed ad earum inventore
+              provident quas eius libero obcaecati, nulla temporibus, mollitia
+              recusandae.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--! ABOUT END -->
+    <!--! OUR TEAM START -->
+    <div
+      class="container3 text-center text-light mt-4 mb-2 shadow-lg rounded-5 overflow-hidden"
+    >
+      <h2 class="fw-bold pb-3 pt-4" id="ourTeam">Our Team</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team3.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team4.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team5.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team6.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team7.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card h-100 teamCard">
+            <img src="./img/team8.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Name - Surname</h5>
+              <p class="card-text">
+                Position <br />
+                Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! OUR TEAM END -->
+    <!--! STUDENTS START -->
+    <div
+      class="container4 mt-4 mb-2 shadow-lg rounded-5 overflow-hidden d-flex flex-column justify-content-center align-items-center"
+      id="students"
+    >
+      <h2 class="fw-bold pb-3 pt-4 text-light" id="ourTeam">
+        Student Opinions
+      </h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-4">
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (1).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (2).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (3).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (4).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (5).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardbg p-1 rounded-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./img/Student (6).jpeg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 stdCardMain text-light">
+                <div class="card-body p-2">
+                  <h5 class="card-title">Name - Surname</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! STUDENTS END -->
+    <!--! COURSES START -->
+    <div
+      class="container5 text-center text-light mt-4 mb-2 shadow-lg rounded-5 overflow-hidden"
+    >
+      <h2 class="fw-bold pb-3 pt-4 text-light" id="courses">Courses</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-75"
+              src="./img/Bootstrap.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-50"
+              src="./img/Css.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-75"
+              src="./img/Git.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-75"
+              src="./img/HTML5.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-75"
+              src="./img/Jvs.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100 d-flex justify-content-center align-items-center bg-transparent border border-2 cardCourse"
+          >
+            <img
+              class="w-50"
+              src="./img/Python.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! COURSES END -->
+    <!--! CONTACT START -->
+    <div
+      id="contact"
+      class="container6 mt-4 mb-2 shadow-lg rounded-5 overflow-hidden d-flex flex-column justify-content-center align-items-center text-light"
+    >
+      <h3 class="mt-5 mb-2 font-weight-bold">Contact Us</h3>
+      <form action="" class="col-md-10 text-left m-auto">
+        <div class="form-group row m-2">
+          <label for="" class="col-md-4 align-self-center">Name: </label>
+          <input type="text" class="col-md-8" />
+        </div>
+        <div class="form-group row m-2">
+          <label for="" class="col-md-4 align-self-center">Surname: </label>
+          <input type="text" class="col-md-8" />
+        </div>
+        <div class="form-group row m-2">
+          <label for="" class="col-md-4 align-self-center">E-Mail: </label>
+          <input type="email" class="col-md-8" />
+        </div>
+        <div class="form-group row m-2">
+          <label for="" class="col-md-4 align-self-center">Message: </label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="col-md-8"
+          ></textarea>
+        </div>
+        <div class="form-group row m-2 d-flex justify-content-end">
+          <button type="submit" class="col-md-3 btn bg-light text-dark">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--! CONTACT END -->
+    <!--! FOOTER START -->
+    <nav class="navbar footer navbar-dark text-light p-3">
+      <div class="container-fluid">
+        <a class="text-decoration-none text-light fs-1" href="#"
+          >cod<span class="fw-bold text-warning">&lt;E&gt;</span>du</a
+        >
+
+        <div
+          class="rights d-flex flex-column align-items-center justify-content-center"
+        >
+          <p>All Rights Reserved &copy; | 2024</p>
+          <p>Designed by Djelal</p>
+        </div>
+        <div class="icon-box">
+          <a class="text-decoration-none text-light" href=""
+            ><i class="fa-brands fa-linkedin fs-1 pe-2"></i
+          ></a>
+          <a class="text-decoration-none text-light" href=""
+            ><i class="fa-brands fa-square-github fs-1 pe-2"></i
+          ></a>
+          <a class="text-decoration-none text-light" href=""
+            ><i class="fa-brands fa-square-x-twitter fs-1 pe-2"></i
+          ></a>
+          <a class="text-decoration-none text-light" href=""
+            ><i class="fa-brands fa-square-instagram fs-1"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <!--! FOOTER END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
